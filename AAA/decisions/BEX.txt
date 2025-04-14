@@ -101,4 +101,96 @@ political_decisions = {
 			}
 		}
 	}
+luxemburg_prisoedinenie = {
+		potential = {
+			tag = BEX
+		}
+		allow = {
+			prestige = 25
+			exists = LUX
+		}
+		effect = {
+			money = -50000
+			add_core = 397
+			add_core = 398
+			prestige = 5
+			add_accepted_culture = french
+			add_accepted_culture = north_german
+			397 = {
+				secede_province = BEX
+			}
+			398 = {
+				secede_province = BEX
+			}
+			
+
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				war = yes
+			}
+		}
+	}
+ireland_prisoedinenie = {
+		potential = {
+			tag = BEX
+		}
+		allow = {
+			prestige = 35
+			exists = IRE
+		}
+		effect = {
+			money = -50000
+			add_core = 397
+			add_core = 398
+			prestige = 5
+			add_accepted_culture = irish
+			254 = {
+				secede_province = BEX
+			}
+			255 = {
+				secede_province = BEX
+			}
+			256 = {
+				secede_province = BEX
+			}
+			257 = {
+				secede_province = BEX
+			}
+			258 = {
+				secede_province = BEX
+			}
+			259 = {
+				secede_province = BEX
+			}
+			263 = {
+				secede_province = BEX
+			}
+			264 = {
+				secede_province = BEX
+			}
+			265 = {
+				secede_province = BEX
+			}
+			262 = {
+				secede_province = BEX
+			}
+			260 = {
+				secede_province = BEX
+			}
+			261 = {
+				secede_province = BEX
+			}
+
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				war = yes
+			}
+		}
+	}
 }

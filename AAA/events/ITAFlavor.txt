@@ -360,3 +360,94 @@ country_event = {
 		}
 	}
 }
+#Italys_fate_event
+country_event = {
+	id = 46500
+	trigger = {
+		tag = SIC
+		check_variable = { 
+			which = frstitades
+			value = 1
+		}
+
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen =  {
+		months = 1
+	}
+	title = "EVTNAME46500"
+	desc = "EVTDESC46500"
+	picture = "marshrome"
+
+	option = {
+		name = "EVTOPTA46500" 
+		set_variable = {
+			which = italysvar
+			value = 0
+		}
+	}
+	option = {
+		name = "EVTOPTB46500" 
+		set_variable = {
+			which = italysvar
+			value = 1
+		}
+	}
+}
+#Empires events
+country_event = {
+	#RHE Better Education
+	id = 10099
+	title = "EVTNAME10099"
+	desc = "EVTDESC10099"
+	fire_only_once = yes
+	trigger = {
+		tag = RHE
+	}
+ 
+	mean_time_to_happen =  {
+		months = 1
+	}
+
+
+	option = {
+		name = "EVTOPTA10099"
+		research_points = 10000
+		any_pop = {
+			literacy = 0.1
+		}
+		change_variable = { 
+			which = education_efficiency
+			education_efficiency = 0.8	
+		}
+	}
+}
+country_event = {
+	#RPR Better Education
+	id = 10098
+	title = "EVTNAME10098"
+	desc = "EVTDESC10098"
+	fire_only_once = yes
+	trigger = {
+		tag = RpR
+	}
+ 
+	mean_time_to_happen =  {
+		months = 1
+	}
+
+
+	option = {
+		name = "EVTOPTA10098"
+		research_points = 10000
+		any_pop = {
+			literacy = 0.1
+		}
+		change_variable = { 
+			which = education_efficiency
+			education_efficiency = 0.8	
+		}
+	}
+}
