@@ -147,6 +147,19 @@ ireland_prisoedinenie = {
 			add_core = 398
 			prestige = 5
 			add_accepted_culture = irish
+			add_core = 265
+			add_core = 263
+			add_core = 264 
+			add_core = 256
+			add_core = 255
+			add_core = 254
+			add_core = 257
+			add_core = 258
+			add_core = 259
+			add_core = 262
+			add_core = 260
+			add_core = 261
+
 			254 = {
 				secede_province = BEX
 			}
