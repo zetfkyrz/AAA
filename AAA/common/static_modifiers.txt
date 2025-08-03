@@ -8,10 +8,25 @@
 ##########################################################################
 # Difficulty Modifiers
 ##########################################################################
-
-
-
+swedish_dodep = {
+	factory_output = 0.15
+}
+investion_to_fabric_in_cities = {
+	factory_output = 0.25
+}
+dutch_full_dep = {
+	factory_output = 0.1
+	research_points_modifier = 0.1
+	global_population_growth = 0.05
+	local_ship_build = -0.25
+	loan_interest = 1.5
+	naval_tech_research_bonus = 0.1
+}
+population_hyesosi = {
+	global_population_growth = 0.15
+}
 very_easy_player = {
+	loan_interest = 0.5
 	supply_consumption = -0.5
 	research_points_modifier = 0.5
 	war_exhaustion = -0.1
@@ -22,14 +37,20 @@ easy_player = {
 	supply_consumption = -0.25
 	research_points_modifier = 0.25
 	leadership_modifier = 0.25
+	loan_interest = 0.5
 }
+medium_player = {
 
+	loan_interest = 0.5
+}
 hard_player = {
 	supply_consumption = 0.5
+	loan_interest = 0.5
 }
 
 very_hard_player = {
 	supply_consumption = 1.0
+	loan_interest = 0.5
 }
 
 
@@ -42,9 +63,13 @@ very_easy_ai = {
 }
 
 easy_ai = {
+	loan_interest = 0.5
 }
-
+medium_ai = {
+	loan_interest = 0.5
+}
 hard_ai = {
+	loan_interest = 0.5
 	badboy = -0.05
 	research_points_modifier = 0.25
 	land_organisation = 0.125
@@ -54,6 +79,7 @@ hard_ai = {
 }
 
 very_hard_ai = {
+	loan_interest = 0.5
 	badboy = -0.1
 	research_points_modifier = 5.0
 	land_organisation = 0.25
