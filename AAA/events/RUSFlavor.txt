@@ -4410,19 +4410,13 @@ country_event = {
 			militancy = -2
 			consciousness = 2
 		}
-		random_list = {
-			50 = {
-				country_event = 95484
-			}
-			50 = {
-				country_event = 95485
-			}
-		}
+		country_event = 95485
+
 		remove_country_modifier = north_i_south_organisations
 	}
 }
 country_event = {
-
+	#####ÂÛĞÅÇÀÍ#####
 	id = 95484
 	is_triggered_only = yes
 

@@ -9,21 +9,40 @@
 # Difficulty Modifiers
 ##########################################################################
 swedish_dodep = {
-	factory_output = 0.15
+	factory_cost = -0.05
+	mobilisation_size = -0.1
+	factory_output = 0.05
+	prestige = 0.01
+	factory_throughput = 0.05
+	tax_efficiency = 0.05
+	research_points_modifier = 0.1
+	naval_tech_research_bonus = 0.1
+	industry_tech_research_bonus = 0.1
 }
 investion_to_fabric_in_cities = {
-	factory_output = 0.25
+	industry_tech_research_bonus = 0.25
+	factory_cost = -0.25
+	factory_owner_cost = -0.25
+	mobilisation_size = -0.25
+	factory_output = 0.05
+	factory_throughput = 0.05
 }
 dutch_full_dep = {
-	factory_output = 0.1
-	research_points_modifier = 0.1
-	global_population_growth = 0.05
+	factory_cost = -0.05
+	factory_throughput = 0.05
 	local_ship_build = -0.25
-	loan_interest = 1.5
-	naval_tech_research_bonus = 0.1
+	industry_tech_research_bonus = 0.05
+	naval_tech_research_bonus = 0.05
+}
+afg = {
+	rgo_output = 0.25
+}
+non_civ = {
+	factory_output = -0.1
+	rgo_output = 0.05
 }
 population_hyesosi = {
-	global_population_growth = 0.15
+	global_population_growth = 0.0025
 }
 very_easy_player = {
 	loan_interest = 0.5
@@ -56,19 +75,23 @@ very_hard_player = {
 
 
 
-very_easy_ai = {
+very_easy_ai = {	
+	mobilisation_size = -0.35
 	land_organisation = -0.25
 	naval_organisation = -0.25
 
 }
 
 easy_ai = {
+	mobilisation_size = -0.3
 	loan_interest = 0.5
 }
 medium_ai = {
+	mobilisation_size = -0.25
 	loan_interest = 0.5
 }
 hard_ai = {
+	mobilisation_size = -0.2
 	loan_interest = 0.5
 	badboy = -0.05
 	research_points_modifier = 0.25
@@ -79,6 +102,7 @@ hard_ai = {
 }
 
 very_hard_ai = {
+	mobilisation_size = -0.15
 	loan_interest = 0.5
 	badboy = -0.1
 	research_points_modifier = 5.0
@@ -179,8 +203,8 @@ disarming = {
 }
 
 war_exhaustion = {
-	factory_throughput = -0.01
-	RGO_throughput = -0.01
+	factory_throughput = -0.05
+	RGO_throughput = -0.05
 	cb_generation_speed_modifier = -0.02
 }
 
@@ -200,29 +224,68 @@ bad_debter = {
 }
 
 great_power = {
+	RGO_throughput = 0.05
+	factory_throughput = 0.05
+	factory_output = 0.1
 	prestige = 0.05
 	research_points = 1.5
 	diplomatic_points_modifier = 1.0
 	leadership = 2.0
+	###AAA###
+	loan_interest = 1.0
+	rich_income_modifier = 0.35
+	rich_life_needs = -0.35
+	rich_everyday_needs = -0.35
+	rich_luxury_needs = -0.25
+	poor_life_needs = 0.05
+	tax_efficiency = -0.15
+	###AAA###
 }
 
 second_power = {
+	RGO_throughput = 0.05
+	factory_throughput = 0.05
 	prestige = 0.025
 	research_points = 1.25
 	diplomatic_points_modifier = 0.25
 	leadership = 1.0
+	###AAA###
+	loan_interest = 1.0
+	rich_income_modifier = 0.25
+	rich_life_needs = -0.35
+	rich_everyday_needs = -0.35
+	rich_luxury_needs = -0.25
+	poor_life_needs = 0.05
+	tax_efficiency = -0.15
+	###AAA###
 }
 
 civ_nation = {
+	RGO_throughput = 0.05
+	factory_throughput = 0.05
 	prestige = 0.01
 	research_points = 1
 	leadership = 0.5
+	###AAA###
+	loan_interest = 1.0
+	rich_income_modifier = 0.2
+	rich_life_needs = -0.35
+	rich_everyday_needs = -0.35
+	rich_luxury_needs = -0.25
+	poor_life_needs = 0.05
+	tax_efficiency = -0.15
+	###AAA###
 }
 
 unciv_nation = {
+	factory_output = -0.5
 	mobilisation_size = -0.1
 	diplomatic_points_modifier = -0.25
-	cb_generation_speed_modifier = 0.8
+	cb_generation_speed_modifier = 0.5
+	###AAA###
+	poor_life_needs = 0.05
+	tax_efficiency = -0.15
+	###AAA###
 }
 
 
@@ -234,7 +297,7 @@ average_literacy = {
 }
 
 plurality = { 
-	research_points_modifier = 0.02
+	research_points_modifier = 0.1
 }
 
 generalised_debt_default = {
@@ -243,10 +306,14 @@ generalised_debt_default = {
 
 total_occupation = {
 	war_exhaustion = 0.05				#increased by war exhaustion.
+	factory_throughput = -0.05
+	global_population_growth = -0.0015
 }
 
 total_blockaded = {
-	war_exhaustion = 0.5				#increased by war exhaustion.  
+	war_exhaustion = 0.5				#increased by war exhaustion.  \
+	factory_throughput = -0.05
+	global_population_growth = -0.0015
 }
 
 in_bankrupcy = {

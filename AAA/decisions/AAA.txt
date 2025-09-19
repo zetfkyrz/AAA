@@ -18,7 +18,7 @@ political_decisions = {
 		effect = {
 			prestige = 1
 			money = -20000
-			research_points = 2000
+			research_points = 8000
 			any_pop = {
 				literacy = 0.01
 			}
@@ -422,7 +422,6 @@ political_decisions = {
 form_south_german_confederation_bav = {
 		potential = {
 			tag = BAV
-			is_greater_power = yes
 			primary_culture = south_german
 			NOT = {
 				exists = SGF
